@@ -263,10 +263,6 @@ struct binder_node_info_for_ref {
 #define BINDER_THREAD_EXIT		_IOW('b', 8, __s32)
 #define BINDER_VERSION			_IOWR('b', 9, struct binder_version)
 #define BINDER_GET_NODE_DEBUG_INFO	_IOWR('b', 11, struct binder_node_debug_info)
-<<<<<<< HEAD
-=======
-#define BINDER_GET_NODE_INFO_FOR_REF	_IOWR('b', 12, struct binder_node_info_for_ref)
->>>>>>> parent of 0272cd402b73... FROMGIT: binder: create node flag to request sender's security context
 
 /*
  * NOTE: Two special error codes you should check for when calling
