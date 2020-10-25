@@ -11,16 +11,16 @@
 #include <linux/kthread.h>
 #include <linux/moduleparam.h>
 
-static unsigned int devfreq_input_boost_duration_ms __read_mostly =
+static unsigned short devfreq_input_boost_duration_ms __read_mostly =
 	CONFIG_DEVFREQ_INPUT_BOOST_DURATION_MS;
-static unsigned int devfreq_wake_boost_duration_ms __read_mostly =
+static unsigned short devfreq_wake_boost_duration_ms __read_mostly =
 	CONFIG_DEVFREQ_WAKE_BOOST_DURATION_MS;
-static unsigned int devfreq_msm_cpubw_boost_freq __read_mostly =
+static unsigned short devfreq_msm_cpubw_boost_freq __read_mostly =
 	CONFIG_DEVFREQ_MSM_CPUBW_BOOST_FREQ;
 
-module_param(devfreq_input_boost_duration_ms, uint, 0644);
-module_param(devfreq_wake_boost_duration_ms, uint, 0644);
-module_param(devfreq_msm_cpubw_boost_freq, uint, 0644);
+module_param(devfreq_input_boost_duration_ms, short, 0644);
+module_param(devfreq_wake_boost_duration_ms, short, 0644);
+module_param(devfreq_msm_cpubw_boost_freq, short, 0644);
 
 enum {
 	SCREEN_OFF,
